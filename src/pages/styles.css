@@ -1,0 +1,345 @@
+/* Định dạng chung cho trang */
+.email-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 20vh;
+}
+
+/* Phần chính của form */
+.form-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 20px;
+}
+
+/* Phần bên trái */
+.form-left {
+  width: 48%;
+  padding-right: 20px;
+}
+
+/* Phần bên phải */
+.form-right {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tiêu đề form */
+.form-title {
+  font-size: 50px; /* Tăng kích thước */
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Tạo bóng chữ nổi bật */
+  background: linear-gradient(90deg, #2196F3, #21CBF3);  /* Gradient xanh lá cây đẹp hơn */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Định dạng form */
+.email-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Nhóm các trường dữ liệu */
+.form-group {
+  margin-bottom: 1px;
+}
+
+/* Label các trường */
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 1px;
+  color: #555;
+  font-size: 14px;
+  display: block;
+}
+/* Định dạng input và textarea */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4CAF50;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+/* Định dạng textarea */
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Các nút button */
+button {
+  padding: 12px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Hiệu ứng hover cho các trường nhập liệu */
+.form-group input:hover,
+.form-group textarea:hover {
+  border-color: #4CAF50;
+}
+
+
+.preview-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Điện thoại */
+.phone-preview {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  background-color: #010000;
+  border-radius: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.phone-frame {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 280px;
+  height: 580px;
+  border-radius: 30px;
+  background-color: #000;
+}
+
+.phone-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* .sent-button {
+  background-color: #2196F3; 
+  color: rgb(253, 253, 253);
+  font-size: 22px;
+  font-weight: bold;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  width: 33%; 
+  position: absolute;
+  bottom: 26px; 
+  left: 30.6%;
+  transform: translateX(-50%); 
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s;
+}
+
+.sent-button:hover {
+  background-color: #21CBF3; /
+} */
+
+.camera-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 10;
+}
+
+.camera-icon {
+  width: 16px;
+  height: 16px;
+  background-color: #000000;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.camera-text {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.status-bar {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+  color: #ffffff;
+}
+
+.signal-icon,
+.wifi-icon,
+.battery-icon {
+  font-size: 14px;
+}
+
+/* Thanh màu trắng xám ở dưới cùng */
+.bottom-line {
+  position: absolute; /* Đảm bảo thanh nằm trên hình nền */
+  bottom: -540px; /* Khoảng cách từ đáy */
+  left: 50%; /* Căn giữa thanh */
+  transform: translateX(-50%); /* Căn chính xác */
+  width: 50px; /* Chiều dài của thanh */
+  height: 3px; /* Chiều cao của thanh */
+  background-color: #d3d3d3; /* Màu trắng xám */
+  z-index: 20; /* Đảm bảo thanh nằm trên các phần tử khác */
+}
+
+/* Ô tròn màu trắng ở góc dưới bên phải */
+.round-button {
+  position: absolute;
+  bottom: -520px;  /* Khoảng cách từ dưới */
+  right: 20px;   /* Khoảng cách từ bên phải */
+  width: 40px;   /* Đường kính của ô tròn */
+  height: 40px;  /* Đường kính của ô tròn */
+  background-color: #ffffff;
+  border-radius: 50%; /* Tạo hình tròn */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Tạo bóng mờ cho ô tròn */
+  z-index: 30; /* Đảm bảo ô tròn nằm trên các phần tử khác */
+}
+
+.round-button i {
+  font-size: 24px; /* Kích thước biểu tượng */
+  color: #000000;  /* Màu của biểu tượng */
+}
+
+
+
+.time {
+  font-size: 70px;
+  font-weight: 600;
+  position: absolute;  /* Đặt nó ở vị trí tuyệt đối */
+  top: 40px;           /* Đặt cách phía trên cùng một khoảng */
+  left: 40%;           /* Đặt nó ở chính giữa */
+  transform: translateX(-50%); /* Dịch chuyển để căn giữa chính xác */
+  color: #fff;         /* Màu trắng để nổi bật trên nền tối */
+  z-index: 10;         /* Đảm bảo nó nằm trên các phần tử khác */
+}
+
+.date-time-container {
+  position: absolute;
+  top: 115px; /* Điều chỉnh vị trí thời gian */
+  left: 31%;
+  transform: translateX(-50%);
+  text-align: left;
+  z-index: 10;
+}
+
+.additional-text {
+  color: rgb(71, 66, 60);
+  font-size: 14px; /* Dòng chữ thứ 2 lớn hơn */
+  margin-top: 10px;
+}
+
+.small-text {
+  color: white;
+  font-size: 10px; /* Dòng chữ thứ 3 nhỏ hơn */
+  margin-top: 5px;
+}
+
+.phone-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 15px;
+  box-sizing: border-box;
+  background-image: url('https://cdn.xtmobile.vn/vnt_upload/news/06_2024/hinh-nen-anime-cho-dien-thoai-12-xtmobile.jpg'); /* Thêm hình nền cho màn hình */
+  background-size: cover;
+  background-position: center;
+}
+
+.email-preview {
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Tạo nền trắng xám nhẹ */
+  border-radius: 20px; /* Bo góc cho hộp email */
+  padding: 20px; /* Khoảng cách bên trong hộp */
+  width: 80%; /* Độ rộng hộp */
+  margin: 0 auto; /* Căn giữa hộp */
+  position: absolute; /* Đặt tuyệt đối so với phần tử cha */
+  top: 50%; /* Đặt ở giữa màn hình */
+  left: 50%; /* Căn giữa theo chiều ngang */
+  transform: translate(-50%, -50%); /* Dịch chuyển để căn giữa chính xác */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng cho hộp */
+}
+
+.email-preview h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+.email-preview p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  text-align: center; /* Căn giữa nội dung */
+}
+
+.email-preview img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+

@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom additional styles if needed */
+.s3-dashboard {
+  @apply max-w-6xl mx-auto;
+}
+
+.dashboard-card {
+  @apply bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition-shadow duration-300;
+}
+
+.table-hover tr:hover {
+  @apply bg-gray-50 transition-colors duration-200;
+}

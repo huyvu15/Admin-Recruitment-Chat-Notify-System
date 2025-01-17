@@ -1,0 +1,8 @@
+.border-box {
+    border: 2px solid #e0e0e0; /* Màu viền */
+    border-radius: 8px; /* Bo góc */
+    padding: 16px; /* Khoảng cách bên trong */
+    background-color: #ffffff; /* Màu nền */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bóng đổ */
+  }
+  
